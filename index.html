@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav id="nav">
+        <img src="images/logo.svg" alt="logo">
+        <div class="navigation">
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Blog</a></li>
+               <li><a href="#">Courses</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+
+    <section>
+        <div class="container">
+            <h2>Password Generator</h2>
+    
+                <div class="input">
+                    <input type="text" id="userInput" placeholder="Entrez votre mot de passe">
+                    <button class="btn" id="clipboard">
+                    <i class="far fa-clipboard"></i>
+                    </button>
+                    <p id="password-strength"></p>
+                </div>
+                
+                
+    
+            <div class="settings">
+                <div class="setting">
+                    <label>Password Length</label>
+                    <input type="number" id="length" min="4" max="20">
+                </div>
+                <div class="setting">
+                    <label>Include uppercase letters</label>
+                    <input type="checkbox" id="uppercase" checked>
+                </div>
+    
+                <div class="setting">
+                    <label>Include lowercase letters</label>
+                    <input type="checkbox" id="lowercase" checked>
+                </div>
+    
+                <div class="setting">
+                    <label>Include numbers</label>
+                    <input type="checkbox" id="numbers" checked>
+                </div>
+    
+                <div class="setting">
+                    <label>Include symbols</label>
+                    <input type="checkbox" id="symbols" checked>
+                </div>
+                
+            </div>
+    
+            <button class="btn btn-large" id="generate">
+                Generate Password
+            </button>
+
+            <button class="btn-voir" id="voir">Voir</button>
+            <div id="zone"></div>
+    
+        </div>
+
+        <div id="message">
+            <h3>Le mot de passe doit contenir les éléments suivants</h3>
+            <p id="letter" class="invalid">Une lettre minuscule</p>
+            <p id="capital" class="invalid">Une lettre majuscule</p>
+            <p id="number" class="invalid">Un chiffre</p>
+            <p id="symbol" class="invalid">Inclure un symbol</p>
+            <p id="lenght" class="invalid">8 caractères minimum</p>
+        </div>
+    </section>
+
+  
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <img src="images/logo.svg" alt="logo">
+                <p>Email: <a href="mailto:Tech@Educa.com">Tech@Educa.com</a></p>
+                <p>Phone: <span id="footer-num">+00 41 258 9854</span> </p>
+                <p>Location: <span id="footer-num">Consulting Press 7791 Woodland Avenue 10 000 Zagreb, Croatia</span></p>
+            </div>
+            <div class="footer-column">
+                <h3>Site Map</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>About us</h3>
+                <div class="phrase">
+                    Axegico have much planned for the future, working with great clients and continued software development. If you'd like to join our team, then we'd also love to hear from you.
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">professional it security</a></li>
+                    <li><a href="#">threat managment</a></li>
+                    <li><a href="#">implamantion</a></li>
+                    <li><a href="#">security risk</a></li>
+                    <li><a href="#">security managment</a></li>
+                    <li><a href="#">Educations</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 TechEduca. All Rights Reserved.</p>
+           
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
+                
+            </div>
+        </div>
+    </footer>
+
+    
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
